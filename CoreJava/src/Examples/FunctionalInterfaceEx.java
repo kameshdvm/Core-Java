@@ -1,7 +1,7 @@
 package Examples;
 
-@FunctionalInterface
-interface myinterface
+@FunctionalInterface		//it contains only one abstract methods and many default methods
+interface myinterface		
 {
 	void calc(int a,int b);
 }
