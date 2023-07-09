@@ -1,16 +1,17 @@
 package Examples.Integer;
 
 public class IntegerMethodsExample {
-    public static void main(String[] args) {
+    @SuppressWarnings("removal")
+	public static void main(String[] args) {
         // Creating Integer objects
         
 		Integer num1 = new Integer(10);
-		Integer num2 = new Integer("20");
+		Integer num2 = new Integer(20);
 
         // intValue() - Converts Integer to int
         int value1 = num1.intValue();
         int value2 = num2.intValue();
-        System.out.println("intValue():");
+        System.out.println("intValue():"); 
         System.out.println("num1: " + value1);
         System.out.println("num2: " + value2);
 
