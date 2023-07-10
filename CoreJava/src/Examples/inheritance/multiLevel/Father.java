@@ -1,8 +1,9 @@
 package Examples.inheritance.multiLevel;
 
 public class Father extends GrandFather{
-
-	public void fatherMethod() {
+	
+	public  void fatherMethod() {
 System.out.println("Method from Father..");
 	}
+	
 }
