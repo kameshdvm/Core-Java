@@ -1,7 +1,7 @@
 package Examples;
 
 @FunctionalInterface		//it contains only one abstract methods and many default methods
-interface myinterface		
+ interface myinterface		
 {
 	void calc(int a,int b);
 }
@@ -14,5 +14,7 @@ public class FunctionalInterfaceEx {
 		
 		i.calc(5,4);
 	}
-
+static void my() {
+	System.out.println("static method from functonal interface..");
+}
 }

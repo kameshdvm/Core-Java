@@ -4,6 +4,9 @@ public class MyThread extends Thread {
 	// Print the name of the main thread
 	@Override
     public void run() {
-        System.out.println("My Thread 1: " + Thread.currentThread().getName());
+		for (int i = 0; i <5; i++) {
+			System.out.println("My Thread 1: ");	
+		}
+        
     }
 }

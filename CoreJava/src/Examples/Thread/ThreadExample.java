@@ -1,7 +1,7 @@
 package Examples.Thread;
 
 public class ThreadExample {
-    public static void main(String[] args) {
+    	public static void main(String[] args) {
         // Create a new thread using the Thread class
         MyThread myThread = new MyThread();
         MyThread2 myThread2 =new MyThread2();
@@ -11,17 +11,29 @@ public class ThreadExample {
         // Start the thread
         myThread.start();
         myThread.run();
-        
+    
         myThread2.start();
         myThread2.run();
-        
+       
         myThread3.start();
         myThread3.run();
-         
+        try {
+			myThread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        try {
+			myThread.join();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+     
         
         // Sleep the main thread for 2 seconds
         try {
-            Thread.sleep(2000);
+            myThread2.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

@@ -1,6 +1,6 @@
 package Examples.Abstraction;
 
-public abstract class PartiallyAbstract {
+ public abstract class PartiallyAbstract {
 	
 	PartiallyAbstract()		//abstract class can have constructor 
 	{
