@@ -7,6 +7,6 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="C:/Users/Kamesh/Downloads/J2ee-20230622T092256Z-001/J2ee/mysql-connector-java-8.0.29 Downloaded From Maven Reposetory.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Kamesh/Downloads/J2ee-20230622T092256Z-001/J2ee/javax.servlet-api-3.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Kamesh/Downloads/J2ee-20230622T092256Z-001/J2ee/jakarta.servlet-api-6.0.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

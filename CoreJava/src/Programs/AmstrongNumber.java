@@ -5,36 +5,28 @@ public class AmstrongNumber {
 	public static void main(String[] args) 
 	{
 		
-		for(int i=1;i<=1000;i++)
+		for(int input=1;input<=1000;input++)
 		{
-			boolean checkAmstrong = checkAmstrong(i);
-			if(checkAmstrong)
+		
+			int i=0,j=0;
+			int a=input;
+			while(a>0)
 			{
-				System.out.println("Amstrong number "+i);
+				i=a%10;
+				j=j+(i*i*i);
+				a=a/10;
 			}
-		}
+			if(input==j)
+			{
+				System.out.println("Amstrong number "+input);
+			}
+		}		
+		
 	}
 //An Armstrong number is a number that is equal to the sum of its own digits,each raised 
 // to the power of the number of digits. It is also known as a Narcissistic number
 //Example Number: 153
 //Digits: 1, 5, 3
 //Number of digits: 3
-//Calculation: 1^3 + 5^3 + 3^3 = 1 + 125 + 27 = 153
-
-	static boolean checkAmstrong(int num)
-		{
-		int i=0,j=0;
-		int a=num;
-		while(a>0)
-		{
-			i=a%10;
-			j=j+(i*i*i);
-			a=a/10;
-		}
-		Boolean amstrong=false;
-		if(num==j) {
-		amstrong=true;	
-		}
-		return amstrong;
-	}
+//Calculation: 1^3 + 5^3 + 3^3 = 1 + 125 + 27 = 153	
 }

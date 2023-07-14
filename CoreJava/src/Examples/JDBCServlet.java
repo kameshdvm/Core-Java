@@ -1,9 +1,18 @@
 package Examples;
-import javax.servlet.*;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.*;
-import java.io.*;
-import java.sql.*;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.Date;
+import com.mysql.cj.xdevapi.Statement;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet("/")
 public class JDBCServlet extends HttpServlet {
@@ -28,11 +37,11 @@ public class JDBCServlet extends HttpServlet {
             conn = DriverManager.getConnection(url, username, password);
 
             // Create a statement
-            stmt = conn.createStatement();
+            stmt = (Statement) conn.createStatement();
 
             // Execute a query
             String sql = "SELECT id, name, dob, email FROM user";
-            rs = stmt.executeQuery(sql);
+            rs = ((java.sql.Statement) stmt).executeQuery(sql);
 
             // Set response content type
             response.setContentType("text/html");
@@ -41,7 +50,7 @@ public class JDBCServlet extends HttpServlet {
             PrintWriter out = response.getWriter();
 
             // Write the HTML response
-            out.println("<html><body>");
+            out.println("<html><head></head><body>");
 
             // Process the result set and generate HTML output
             while (rs.next()) {
@@ -64,7 +73,7 @@ public class JDBCServlet extends HttpServlet {
                 if (rs != null)
                     rs.close();
                 if (stmt != null)
-                    stmt.close();
+                    ((PrintWriter) stmt).close();
                 if (conn != null)
                     conn.close();
             } catch (SQLException se) {

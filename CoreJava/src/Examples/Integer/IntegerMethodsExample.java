@@ -56,5 +56,6 @@ public class IntegerMethodsExample {
         int minNum = Integer.min(num1, num2);
         System.out.println("min():");
         System.out.println("Smaller of num1 and num2: " + minNum);
+  
     }
 }

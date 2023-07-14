@@ -25,10 +25,22 @@ public class MathExample {
         // Rounding to the nearest whole number
         double roundNum = Math.round(4.7);
         System.out.println("Rounding 4.7 to the nearest whole number: " + roundNum);
-
+        
+        //Rounding to the nearest lower bound whole number
+        double floorNum = Math.floor(4.7);
+        System.out.println("Rounding 4.7 to the nearest lowerbound whole number: " + floorNum);
+        
+        //Rounding to the nearest upper bound whole number
+        double ceilNum = Math.ceil(4.7);
+        System.out.println("Rounding 4.7 to the nearest upperbound whole number: " + ceilNum);
+        
         // Random number between 0.0 (inclusive) and 1.0 (exclusive)
         double randomNum = Math.random();
         System.out.println("Random number between 0 and 1: " + randomNum);
+
+        //Random number between 0.0 (inclusive) and 20 (exclusive)
+        double randomTill20 = Math.random()*20;
+        System.out.println("Random number between 0 and 20: " + randomTill20);
 
         // Trigonometric functions (radians)
         double sinValue = Math.sin(Math.PI / 6);

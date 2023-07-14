@@ -14,6 +14,7 @@ public class CollectionsExample {
         numbers.add(8);
         numbers.add(1);
         Collections.sort(numbers);
+        
         System.out.println("Sorted list: " + numbers); // Output: [1, 2, 5, 8]
 
         // Example: reverse(List<T> list)
