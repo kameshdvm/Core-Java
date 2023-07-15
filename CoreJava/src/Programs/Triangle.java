@@ -2,7 +2,7 @@ package Programs;
 
 import java.util.Scanner;
 
-public class Practice 
+public class Triangle 
 {
 	public static void main(String[] args) 
 	{
@@ -16,7 +16,7 @@ public class Practice
 			}
 			for (int j = 0; j <= k * 2; j++) 
 			{
-				System.out.print("*");
+				System.out.print("^");
 			}
 			System.out.println();	
 		}

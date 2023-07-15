@@ -9,6 +9,7 @@ public class SumOfEven {
 			if(i%2==0)
 			{
 				 count=count+i;
+				 
 			}
 		
 		}

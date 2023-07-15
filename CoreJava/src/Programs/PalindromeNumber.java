@@ -5,18 +5,17 @@ public class PalindromeNumber {
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		System.out.println("Enter the Number: ");
-		int input = s.nextInt();
-		int temp=input;
-		int i=0,j=0;
-		
-		for(int k=temp;k<input;temp=temp/10)
+		Integer input = s.nextInt();
+		int i=0,j=0,a=0;
+		for(a=input;a>0;a=a/10)
 		{
-			i=temp%10;
-			j=j*10+i;
-			
+			i=a%10;
+			j=(j*10)+i;	
 		}
-		System.out.println(j);
-
+		if(input==j)
+			System.out.println(j+" is palindrome number");
+		else
+			System.out.println(j+" is not a palindrome number");
 	}
 
 }
