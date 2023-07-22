@@ -3,6 +3,7 @@ package Examples.Array;
 import java.util.Arrays;
 
 public class ArrayExample {
+	
 	public static void main(String[] args) {
         // Single-Dimensional Array
         int[] singleArray = {5, 2, 9, 1, 3};
