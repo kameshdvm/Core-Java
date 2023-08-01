@@ -1,7 +1,5 @@
 package Examples.ComparableAndComparator;
 
-import javax.print.attribute.standard.MediaSize.Other;
-
 public class Person  implements Comparable<Person>{
     private String name;
     private int age;
@@ -19,10 +17,9 @@ public class Person  implements Comparable<Person>{
         return age;
     }
     
-	
 	  @Override public int compareTo(Person other) 
 	  {													 // Compare persons based on their age 
-	  return Integer.compare(this.age, other.age); 
+	  return Integer.compare(this.age, other.age);
 	  }
    
     

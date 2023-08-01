@@ -18,8 +18,12 @@ public class UsingComparator {
 	            System.out.println(person);
 	        }
 	        
-	        AgeComparator comparator = new AgeComparator();
-	        Collections.sort(people, comparator);
+	        
+	        Collections.sort(people, new AgeComparator());    //using separate class for comparator 
+	        
+	        //people.sort((p1, p2) -> p1.getAge() - p2.getAge());	//using lamda function comparator
+	        
+	        //people.sort((p1, p2) -> p1.getName().compareTo(p2.getName())); name comparator using lamda
 	           
 	        System.out.println("\nAfter sorting by age:");
 	        for (Person person : people) {

@@ -56,6 +56,12 @@ public class IntegerMethodsExample {
         int minNum = Integer.min(num1, num2);
         System.out.println("min():");
         System.out.println("Smaller of num1 and num2: " + minNum);
-  
+       
+//        Reverse Number
+//        Integer num=1234;
+//        String strnum=num.toString();
+//        StringBuffer sb=new StringBuffer(strnum).reverse();
+//        String string = sb.toString();
+//        System.out.println(Integer.parseInt(string));
     }
 }

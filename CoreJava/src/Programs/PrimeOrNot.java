@@ -13,7 +13,7 @@ public class PrimeOrNot {
 		{
 		if(input%i==0)
 		{
-			count=1;
+			count++;
 		}
 		}
 		if(count==0)

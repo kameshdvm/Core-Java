@@ -12,7 +12,7 @@ public class PalindromeNumber {
 			i=a%10;
 			j=(j*10)+i;	
 		}
-		if(input==j)
+		if(input.equals(j))
 			System.out.println(j+" is palindrome number");
 		else
 			System.out.println(j+" is not a palindrome number");

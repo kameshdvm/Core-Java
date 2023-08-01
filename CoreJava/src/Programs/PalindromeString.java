@@ -11,7 +11,7 @@ public class PalindromeString {
 			reverse=reverse+input.charAt(i);
 		}
 		System.out.println(reverse);
-		if(input.toLowerCase().equals(reverse.toLowerCase()))
+		if(input.equalsIgnoreCase(reverse))
 		{
 			System.out.println("Palindrome String ");
 		}

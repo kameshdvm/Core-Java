@@ -1,5 +1,7 @@
 package Programs;
+
 import java.util.Scanner;
+
 public class ReverseNumber {
 
 	public static void main(String[] args) {
@@ -18,7 +20,21 @@ public class ReverseNumber {
 		System.out.println("Reversed Number is "+j);
 
 	}
-//	
+	
+//	using StringBuffers	
+//	public static void main(String[] args)
+//	{
+//	Scanner s=new Scanner(System.in);
+//	System.out.println("Enter The Number..");
+//	int input=s.nextInt();	
+//	StringBuffer rev=new StringBuffer(Integer.toString(input));
+//	StringBuffer reverse = rev.reverse();
+//	System.out.println(Integer.parseInt(reverse.toString()));
+//
+//	}
+	
+	
+//	using for loop
 //	public static void main(String[] args) {
 //		Scanner s=new Scanner(System.in);
 //		System.out.println("Enter the Number: ");

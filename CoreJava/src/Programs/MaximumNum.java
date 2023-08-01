@@ -1,6 +1,7 @@
 package Programs;
 
 class MaximumNum {
+	int a;
 	public static void main(String[] args) {
 
 		int[] arr = { 23, -34, 50, 74, 55, 43, 5, -66 };

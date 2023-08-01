@@ -1,16 +1,24 @@
 package Examples.ExceptionHandling;
+
 import java.util.Scanner;
 
 public class ExceptionHandlingExample {
     public static void main(String[] args) {
+    	Scanner s=new Scanner(System.in);
+    	System.out.println("Enter your age");
+    	int age=s.nextInt();
         try {
-            divide(10, 0);
-        } catch (ArithmeticException e) {
+            divide(age, 0);
+        } 
+        catch (ArithmeticException e) {
             System.out.println("Caught ArithmeticException: " + e.getMessage());
         }
-
+        finally
+        {
+        	s.close();
+        }
         try {
-            checkAge(15);
+            checkAge(age);
         } catch (InvalidAgeException e) {
             System.out.println("Caught InvalidAgeException: " + e.getMessage());
         }
@@ -28,7 +36,10 @@ public class ExceptionHandlingExample {
 
     // Custom exception class
     static class InvalidAgeException extends Exception {
-        public InvalidAgeException(String message) {
+       
+		private static final long serialVersionUID = 1L;
+
+		public InvalidAgeException(String message) {
             super(message);
         }
     }

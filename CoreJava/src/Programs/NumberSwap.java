@@ -12,6 +12,7 @@ public class NumberSwap {
 		int b = s.nextInt();
 		System.out.println("Before Swap a "+a);
 		System.out.println("Before Swap a "+b);
+		
 		a=a+b;
 		b=a-b;
 		a=a-b;

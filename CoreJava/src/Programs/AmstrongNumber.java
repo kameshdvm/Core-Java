@@ -18,6 +18,7 @@ public class AmstrongNumber {
 			}
 			if(input==j)
 			{
+				
 				System.out.println("Amstrong number "+input);
 			}
 		}		

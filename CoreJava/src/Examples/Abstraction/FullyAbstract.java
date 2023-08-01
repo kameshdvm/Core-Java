@@ -1,7 +1,7 @@
 package Examples.Abstraction;
 
-public interface FullyAbstract {
-	
+interface FullyAbstract 
+{	
 	int a=5;					//by default public static final
 	
 public default void defaultMethod() //from java 8 we create default method in interface
@@ -13,7 +13,5 @@ public static void my()	//from java 8 we create static method in interface. but 
 	System.out.println("static method from interface..");
 }
 void fullyAbstractMethod();
-
-
 }
 

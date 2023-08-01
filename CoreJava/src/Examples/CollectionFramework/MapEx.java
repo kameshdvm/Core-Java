@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 public class MapEx {
-
+	
 	public static void main(String[] args) {
 		Map<Integer, Integer> m=new HashMap<>();
 		m.put(1, null);

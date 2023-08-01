@@ -14,9 +14,14 @@ public class Fibonacci {
 		for(int i=0;i<input;i++)
 		{
 			int c=a+b;
+//			if(c>=input)	//set the ending value example: input=500 it print till within a range 500
+//			{
+//				break;
+//			}
 			System.out.println(c);
 			a=b;
 			b=c;
+			
 		}
 
 	}

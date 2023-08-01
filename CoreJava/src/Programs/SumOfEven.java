@@ -11,7 +11,6 @@ public class SumOfEven {
 				 count=count+i;
 				 
 			}
-		
 		}
 		System.out.println(count);
 
