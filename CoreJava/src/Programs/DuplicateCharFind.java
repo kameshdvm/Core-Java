@@ -14,10 +14,9 @@ public class DuplicateCharFind
 			for (int j = i+1; j <input.length(); j++) {
 				if(array[i]==array[j])
 				{
-					temp=array[j];
 					
 					count++;
-					System.out.print(temp+",");
+					System.out.print(array[j]+",");
 				}	
 			}	
 		}
